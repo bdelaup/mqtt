@@ -1,6 +1,7 @@
-basic.showIcon(IconNames.Heart)
+basic.showIcon(IconNames.Square)
 ESP8266_IoT.initWIFI(SerialPin.P16, SerialPin.P2, BaudRate.BaudRate115200)
 ESP8266_IoT.connectWifi("AP123", "pirouette123")
+basic.showIcon(IconNames.Diamond)
 basic.forever(function () {
     ESP8266_IoT.setMQTT(
     ESP8266_IoT.SchemeList.TCP,
